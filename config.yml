@@ -1,0 +1,16 @@
+title: beheratapasTRB3
+description: Is this course helpfull to built an GitHub
+template:
+  repo: beheratapastrb3-template
+  name: beheratapastrb3
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
